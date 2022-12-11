@@ -14,20 +14,33 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:checked="true"
+        android:checked="false"
         android:textSize="16dp"
-        android:text="CheckBox" />
+        android:text="CheckBox"
+        android:ellipsize="end"/>
 
     <TextView
-        android:id="@+id/qntView"
+        android:id="@+id/qnt"
         android:layout_width="41dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/editButton"
+        android:text="Qtd:"
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/qntView"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
         android:layout_marginBottom="30dp"
         android:layout_toStartOf="@+id/editButton"
         android:text="0"
-        android:textAlignment="textEnd"/>
+        android:textAlignment="textEnd" />
 
     <ImageButton
         android:id="@+id/editButton"
@@ -38,7 +51,7 @@
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="30dp"
         android:background="@color/transparent"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:srcCompat="@drawable/editar_icon" />
 
     <ImageButton
         android:id="@+id/deleteButton"
@@ -50,7 +63,7 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="30dp"
-        android:background="@color/red"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        android:background="@color/transparent"
+        app:srcCompat="@drawable/ic_delete_forever" />
 
 </RelativeLayout>
